@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/calendar/calendar",
+    "pages/add/add",
+    "pages/me/me",
+    "pages/information/information",
+    "pages/me/myfriend/myfriend",
+    "pages/me/record/record",
+    "pages/me/change/change",
+    "pages/me/myfriend/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/calendar/calendar",
+        "text": "备忘",
+        "iconPath": "/images/memo1.png",
+        "selectedIconPath": "/images/memo.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加",
+        "iconPath": "/images/add1.png",
+        "selectedIconPath": "/images/add.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "通知",
+        "iconPath": "/images/information1.png",
+        "selectedIconPath": "/images/information.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/images/me1.png",
+        "selectedIconPath": "/images/me.png"
+      }
+    ],
+    "selectedColor": "#000"
+  }
+}

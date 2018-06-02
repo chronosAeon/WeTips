@@ -1,0 +1,4 @@
+/* pages/me/record/record.wxss */
+.a{
+  height: 100vh;
+}

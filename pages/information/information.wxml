@@ -1,0 +1,14 @@
+<!--pages/information.wxml-->
+<view class='a' style='background-image:url(/images/information-img1.png)'>
+  <block wx:for="{{information}}">
+    <view bindtouchstart='touch_start' bindtouchmove='touch_move' style='background-image:url(/images/information-img2.png); background-size:750rpx 100%' >
+      <view  class='information-list' >
+        <text>{{item.time}}</text>
+        <view>
+            <view>{{item.friend}}添加了：</view>
+            <text>{{item.message}}</text>
+        </view>
+      </view>
+    </view>
+  </block> 
+</view>

@@ -1,0 +1,16 @@
+/* pages/me/change/change.wxss */
+.contianer{
+  display: flex;
+  width: 100%;
+  line-height: 100rpx;
+}
+.inputID{
+margin-left:30rpx;
+margin-top:28rpx;
+}
+.inputButton{
+  background-color: white;
+  margin-top: 100rpx;
+  width: 150rpx;
+  height: 90rpx;
+}

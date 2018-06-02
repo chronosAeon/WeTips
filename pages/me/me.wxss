@@ -1,0 +1,77 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400rpx;
+  background-size: 100% 100%;
+}
+.userName{
+  margin-bottom: 50rpx;
+}
+.userID{
+  width: 750rpx;
+}
+.getUserInfo{
+  margin:auto 0;
+}
+.imgCon {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.imgCon image {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  text-align: center;
+  font-size: 32rpx;
+  padding-bottom: 40rpx;
+}
+.rowCon {
+  padding-left: 30rpx;
+  background-color: #fff;
+}
+.row {
+  position: relative;
+  padding: 20rpx 0;
+  border-bottom:1rpx solid #e4e4e4;
+
+}
+.row_l {
+  float: left;
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 42rpx;
+}
+.row_l image{
+  width: 100%;
+  height: 100%;
+}
+.row_text {
+  font-size: 32rpx;
+  color: #333;
+  padding-left: 70rpx;
+}
+.arrows {
+  position: absolute;
+  right: 50rpx;
+  top: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  border-width: 1rpx;
+  border-color: #999 #999 transparent transparent;
+  border-style: solid;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
+}
+.quit{
+  width: 250rpx;
+  height: 100rpx;
+  margin-top: 150rpx;
+  background-color: red;
+}

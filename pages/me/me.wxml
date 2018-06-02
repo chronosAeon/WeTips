@@ -1,0 +1,38 @@
+  <view class="top" style='background-image:url(/images/me-img1.png)'>
+    <button wx:if="{{!info_completed}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='getUserInfo'> 点击绑定 </button>
+     <block wx:else>
+      <image class="imgCon" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class='userName'>{{userInfo.nickName}}</view>
+      <view class='userID'>
+        <view>使用ID：</view>
+        <!-- <open-data type="userNickName"></open-data> -->
+        <view>{{userID}}</view>
+      </view>
+    </block>
+  </view>
+
+<view class="rowCon">
+  <view class="row" catchtap='myfriend'>
+    <view class="row_l">
+      <image src="../../images/friend.png"></image>
+    </view>
+    <view class="row_text">我的好友</view>
+    <view class="arrows"></view>
+  </view>
+  <view class="row" catchtap='record'>
+    <view class="row_l" >
+      <image src="../../images/record.png"></image>
+    </view>
+    <view class="row_text">完成事项</view>
+    <view class="arrows"></view>
+  </view>
+  <view class="row" catchtap='change'>
+    <view class="row_l" >
+      <image src="../../images/change.png"></image>
+    </view>
+    <view class="row_text">更改ID</view>
+    <view class="arrows"></view>
+  </view>
+</view>
+<button class='quit' bindtap='quit'>取消绑定</button>
+

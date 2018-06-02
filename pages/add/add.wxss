@@ -1,0 +1,90 @@
+.select-model{
+  display: flex;
+  flex-direction: row;
+}
+.isSelectfriend{
+  margin: auto 0;
+  margin-left: 450rpx;
+}
+.selectfriend{
+  margin-left: 260rpx;
+  line-height: 100rpx;
+}
+.selectDate{
+  position: relative;
+  text-align: center;
+  top:80rpx;
+}
+.selectTime{
+  position: relative;
+  text-align: center;
+  top:180rpx;
+}
+.imgmode{
+  width: 240rpx;
+  height: 240rpx;
+  margin: 0 auto;
+}
+.text-area{
+  position:relative;
+  width: 76%;
+  height:40vh;
+  top:45rpx;
+  margin-left: 140rpx;
+}
+.area{
+  width: 100%;
+  height: 100%;
+}
+.record{
+  margin-top: 50rpx;
+}
+.record-switch{
+  height: 400rpx;
+
+  margin: 0 auto;
+}
+.big-btn{
+  padding-top: 35rpx;
+  text-align: center;
+}
+.tip{
+  text-align: center;
+}
+.big-btn image{
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 50%;
+  border: 1px solid rgb(185, 206, 227);
+}
+.content-wripper{
+  position: relative;
+  margin-left: 150rpx;
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 60%;
+  border: 1px solid rgb(185, 206, 227);
+  border-radius: 10rpx;
+  align-content: center;
+}
+.content-wripper text{
+  font-size: 30rpx;
+  display: block;
+  position: absolute;
+  left: 60rpx;
+}
+.content-wripper image{
+  display: block;
+  position: absolute;
+  width: 50rpx;
+  height: 80rpx;
+  top: 13rpx; 
+  left: 350rpx;
+}
+.img-size{
+  background-size: 750rpx 100%;
+  width: 750rpx;
+  height: 50vh;
+  margin-top: 50rpx;
+}

@@ -1,0 +1,17 @@
+<view hidden='{{!hasID}}'>
+  <view class='contianer' catchtap='showfriend'>
+    <text class="{{isshowfriend?'rowimg_show':'rowimg'}}"></text>
+    <view>好友列表</view>
+  </view>
+  <view hidden='{{!isshowfriend}}'>
+    <block wx:for="{{friend}}" >
+      <view class="row" catchtap='NTdetail' data-url='{{item.avatarUrl}}' data-name='{{item.name}}'>
+        <view class="row_l">
+          <image src="{{item.avatarUrl?item.avatarUrl:'/images/friend.png'}}"></image>
+        </view>
+        <view class="row_text">{{item.name}}</view>
+        <!-- <view class="arrows"></view> -->
+      </view>
+    </block>
+  </view>
+</view>

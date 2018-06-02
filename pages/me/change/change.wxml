@@ -1,0 +1,6 @@
+<!--pages/me/change/change.wxml-->
+<view class='contianer'>
+  <text>ChangeID:</text>
+  <input placeholder="请输入您的ID"  bindinput='changeID' class='inputID'></input>
+</view>
+<button class='inputButton' bindtap='change'>确定</button>

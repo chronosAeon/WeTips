@@ -1,0 +1,4 @@
+<!--pages/me/myfriend/detail/detail.wxml-->
+<text>pages/me/myfriend/detail/detail.wxml</text>
+<view>{{url}}</view>
+<view>{{name}}</view>

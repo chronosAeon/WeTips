@@ -1,0 +1,60 @@
+<view class="calendar-root" >
+ <view  class='calendar' style='background-image:url(/images/calendar-img1.png)'>
+    <view class="calendar-navbar">
+        <view class="calendar-navbar-button" bindtap="goToday">今日</view>
+        <view class="calendar-navbar-button" bindtap="goLastMonth">{{"<"}}</view>
+        <view class="calendar-navbar-date">{{date}}</view>
+        <view class="calendar-navbar-button" bindtap="goNextMonth">{{">"}}</view>
+        <picker class="calendar-navbar-button" mode="date" start="1900-01-01" end="2100-01-01" bindchange="bindDateChange">
+            <view>跳转</view>
+        </picker>
+    </view>
+
+    <view class="calendar-head">
+        <view wx:for="日一二三四五六" wx:key="*this">{{item}}</view>
+    </view>
+    <view class="calendar-body">
+        <view class="calendar-body-rows" wx:for="123456" wx:for-index="row" wx:key="*this">
+            <view class="calendar-body-cols" wx:for="1234567" wx:for-index="col" wx:key="*this">
+                <view class="{{arrDays[row * 7 + col] ==detailData.curDay?'calendar-body-item-color' : 'calendar-body-item'}}" wx:if="{{arrIsShow[row * 7 + col]}}" data-day-index="{{row * 7 + col}}" bindtap="selectDay">
+                    <view class="calendar-body-day">{{arrDays[row * 7 + col]}}</view>
+                    <view class="calendar-body-dayex">{{arrInfoExShow[row * 7 + col]}}</view> 
+                </view>
+            </view>
+        </view>
+    </view>
+    </view>
+    <view  class='calendar' style='background-image:url(/images/calendar-img2.png)'>
+     <view class='thinglist' >
+        <view class='calendar-detail-day' style='background-image:url(/images/calendar-img3.png)'>
+          {{detailData.curDay}}
+        </view>
+        <view class='today-thing'>今日待办事项</view>
+    </view>
+
+    <block wx:for="{{information}}">
+      <view class='thinglist'> 
+        <view class='today-index'>{{index+1}}</view>
+        <view class='detail-thing'>        
+          <text>{{item.time}}</text>
+          <text>{{item.message}}</text>
+        </view>
+      </view>
+    </block>
+    </view>
+    <!-- <view  class='calendar' style='background-image:url(/images/calendar-img2.png)'>
+    <view class='thinglist'>
+       <view class='Week-thing'>本周待办事项</view>
+       <view class="row_title_r" catchtap='showWeeklyThing'></view>
+    </view>
+    <block wx:for="{{a}}">
+      <view class='thinglist'  hidden="{{WeeklyThing ?true : false }}"> 
+        <view class='today-index'>{{index+1}}</view>
+        <view class='detail-thing'>        
+          <view>{{item.time}}</view>
+          <view>{{item.thing}}</view>
+        </view>
+      </view>
+    </block> 
+    </view> -->
+</view>
