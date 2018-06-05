@@ -1,5 +1,5 @@
 <view class="calendar-root" >
- <view  class='calendar' style='background-image:url(/images/calendar-img1.png)'>
+ <view  class='calendar' style='background-image:url({{calendar_img}})'>
     <view class="calendar-navbar">
         <view class="calendar-navbar-button" bindtap="goToday">今日</view>
         <view class="calendar-navbar-button" bindtap="goLastMonth">{{"<"}}</view>

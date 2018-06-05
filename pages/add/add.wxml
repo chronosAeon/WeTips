@@ -4,7 +4,7 @@
 <image src='/images/add-img2.png' mode='aspectFit' class='imgmode' catchtap='Selectmedo'></image>
 </view>
 <!-- 添加他人 -->
-<view class='select-model' style='background-image:url(/images/isSendOthers.png);background-size:750rpx 100%;height:100rpx'>
+<view class='select-model' style='background-image:url({{is_send_other_img}});background-size:750rpx 100%;height:100rpx'>
   <!-- <text>是否为他人添加:</text> -->
   <radio-group bindchange="Others" class='isSelectfriend'>
     <radio value='1'>是</radio>
@@ -13,13 +13,13 @@
 </view>
 
 <!-- 选择好友 -->
-<view hidden='{{isOthers == 0?true:false}}' style='background-image:url(/images/selectFriend.png);background-size:750rpx 100%;height:100rpx' >
+<view hidden='{{isOthers == 0?true:false}}' style='background-image:url({{selectFriend_img}});background-size:750rpx 100%;height:100rpx' >
   <picker mode="selector" range='{{friendArray}}' bindchange='selectfriend' >
     <view class='selectfriend'>{{friendArray[index]}}
     </view> 
   </picker>
 </view>
-<view style='background-image:url(/images/selectTime.png);background-size:750rpx 100%;height:300rpx;margin-top:10rpx;'>
+<view style='background-image:url({{selectTime_img}});background-size:750rpx 100%;height:300rpx;margin-top:10rpx;'>
     <view class='selectDate'>
       <picker mode="date" start="1900-01-01" end="2100-01-01" bindchange="SelectDate">
         <view>{{selectYear}}年{{selectMonth}}月{{selectDay}}日</view>
@@ -33,7 +33,7 @@
 </view>
 <!-- 文字模式 -->
 <view hidden='{{selectModel==0? true : false}}'>
-  <view  class='img-size' style='background-image:url(/images/add-img3.png)'>
+  <view  class='img-size' style='background-image:url({{add_img}})'>
     <view class='text-area' >   
       <textarea class='area' placeholder="请输入你想备忘的事" bindinput='content'></textarea>
     </view>

@@ -5,6 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    is_send_other_img: app.globalData.web_server_img+'isSendOthers.png',
+    selectFriend_img:app.globalData.web_server_img+'selectFriend.png',
+    selectTime_img: app.globalData.web_server_img + 'selectTime.png',
+    add_img: app.globalData.web_server_img +'add-img3.png',
+    
     selectYear:'',                            //选择年份
     selectMonth:'',                            //选择月份
     selectDay:'',                             //选择日期

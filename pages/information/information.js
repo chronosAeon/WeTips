@@ -66,6 +66,7 @@ Page({
     if (e.touches[0].clientX-this.data.startX>75) {
       // 执行删除逻辑
       console.log('delete_data')
+      //执行删除id操作，然后
     }
     else if (e.touches[0].clientX - this.data.startX < -75){
       //执行添加逻辑

@@ -90,10 +90,12 @@ var curDay = curDate.getDate();
 refreshPageData(curYear, curMonth, curDay);
 const app = getApp()
 Page({
-    data: pageData,
+    data:pageData,
 
     onLoad: function(options){
-      
+      this.setData({
+        calendar_img: app.globalData.web_server_img + 'calendar-img1.png'
+      })
       if (!app.globalData.id)
       {
         // id是空的代表连登陆都没有就必须跳转到登陆授权去
